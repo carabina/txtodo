@@ -11,6 +11,7 @@
 		3A4C59F32420787E004A475C /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C59F22420787E004A475C /* Onboarding.swift */; };
 		3A658F9724288E25005C5513 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A658F9624288E25005C5513 /* Styles.swift */; };
 		3A6A4DAD2424391600013065 /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A4DAC2424391600013065 /* Menus.swift */; };
+		3A6DD11E246E34D30055AF46 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6DD11D246E34D30055AF46 /* CloudKit.framework */; };
 		3A830FC724215B7600DC4766 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A830FC624215B7600DC4766 /* HomeScreen.swift */; };
 		3A8D7625245A84B500B08E0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A8D7627245A84B500B08E0C /* Localizable.strings */; };
 		3A93349D243ACC700016A8E7 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93349C243ACC700016A8E7 /* KeyboardResponder.swift */; };
@@ -39,6 +40,8 @@
 		3A4C59F22420787E004A475C /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		3A658F9624288E25005C5513 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		3A6A4DAC2424391600013065 /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
+		3A6DD11C246E34D00055AF46 /* txtodo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = txtodo.entitlements; sourceTree = "<group>"; };
+		3A6DD11D246E34D30055AF46 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3A830FC624215B7600DC4766 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3A8D7626245A84B500B08E0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3A8D7628245A84C400B08E0C /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA16A692463674400C5D848 /* StoreKit.framework in Frameworks */,
+				3A6DD11E246E34D30055AF46 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +96,7 @@
 		3AA16A672463674400C5D848 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A6DD11D246E34D30055AF46 /* CloudKit.framework */,
 				3AA16A682463674400C5D848 /* StoreKit.framework */,
 			);
 			name = Frameworks;
@@ -137,6 +142,7 @@
 				3AE3ECCC23F8C8CA00F80147 /* Info.plist */,
 				3AA16A6A2463E6C100C5D848 /* IAP_ProductIDs.plist */,
 				3AA16A6C2463E85700C5D848 /* IAPManager.swift */,
+				3A6DD11C246E34D00055AF46 /* txtodo.entitlements */,
 				3A167A28241C8C2B00E942D6 /* Data Models */,
 				3AE3ECC623F8C8CA00F80147 /* Preview Content */,
 			);
@@ -390,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = txtodo/txtodo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"txtodo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9WHCFZ6J4N;
@@ -410,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = txtodo/txtodo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"txtodo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9WHCFZ6J4N;

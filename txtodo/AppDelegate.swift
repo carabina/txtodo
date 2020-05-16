@@ -65,6 +65,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+//        do {
+//            Uncomment to do a dry run and print the CK records it'll make
+//            try container.initializeCloudKitSchema(options: [.dryRun, .printSchema])
+//            Uncomment to initialize your schema
+//            try container.initializeCloudKitSchema()
+//        } catch {
+//            print("Unable to initialize CloudKit schema: \(error.localizedDescription)")
+//        }
+        guard let description = container.persistentStoreDescriptions.first else {
+            fatalError("Could not retrieve a persistent store description.")
+        }
+        let id = "iCloud.txtodo"
+        let options = NSPersistentCloudKitContainerOptions(containerIdentifier: id)
+        description.cloudKitContainerOptions = options
         return container
     }()
 
